@@ -11,11 +11,11 @@
 // NSArray of these JSValue-valid objects:
 typedef NSArray SIOParameterArray;
 // --------------------
-//        NSNull       
-//       NSString      
-//       NSNumber      
-//     NSDictionary    
-//       NSArray       
+//        NSNull
+//       NSString
+//       NSNumber
+//     NSDictionary
+//       NSArray
 //        NSData
 // --------------------
 
@@ -43,5 +43,7 @@ typedef NSArray SIOParameterArray;
 - (void)emit:(NSString *)event args:(SIOParameterArray *)args;
 
 - (void)close;
+- (void)emit:(NSString *)event args:(SIOParameterArray *)args bulletin:(id) ok;
+- (void)sirializedEmit:(NSString *)event args:(SIOParameterArray *)args;
 
 @end
